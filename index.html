@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>庆东纳碧安 KD NAVIEN · 全系列画册 2026</title>
+<meta name="description" content="庆东纳碧安全系列产品画册：壁挂炉、热水器、商用并联系统、落地锅炉、水暖床垫与原厂配件。">
+<script>
+/* ======================================================================
+   经销商信息配置 —— 只需修改这里（留空 "" 则显示为空白填写栏）
+   qrcode: 微信二维码图片路径，例如 "assets/img/dealer-qr.png"（留空显示占位框）
+   ====================================================================== */
+window.DEALER = {
+  name:    "",   // 店名
+  phone:   "",   // 电话
+  address: "",   // 地址
+  wechat:  "",   // 微信号（可选）
+  qrcode:  ""    // 微信二维码图片
+};
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="app">
+  <header class="bar top">
+    <div class="brand"><i class="sq"></i><b>NAVIEN 庆东纳碧安</b><span>KD NAVIEN</span></div>
+    <div class="tools">
+      <button id="btnToc" title="目录">☰<span> 目录</span></button>
+      <button id="btnSound" title="翻页声音" aria-pressed="false">🔇</button>
+      <button id="btnFs" title="全屏">⤢</button>
+    </div>
+  </header>
+  <main id="stage"><div id="bookwrap"><div id="book"></div></div></main>
+  <footer class="bar bottom">
+    <button id="prev" aria-label="上一页">‹</button>
+    <div id="counter">1 / 1</div>
+    <button id="next" aria-label="下一页">›</button>
+  </footer>
+  <div id="hint">拖动页角或左右滑动翻页</div>
+  <aside id="drawer" aria-hidden="true">
+    <div class="dhead"><b>目录 · CONTENTS</b><button id="closeToc">✕</button></div>
+    <div id="thumbs"></div>
+  </aside>
+  <div id="mask"></div>
+</div>
+<noscript>请开启浏览器 JavaScript 以浏览画册。</noscript>
+<script src="assets/page-flip.browser.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
